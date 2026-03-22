@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0; /* Removes default browser padding/margins */
+      }
+      a {
+        color: #ffffff; /* Ensures links are visible on the background */
+        text-decoration: none; /* Removes underline from links */
+      }
+
+      .bgimg {
+        /* 1. Use a relative path! */
+        /* 2. Added a fallback color */
+        background: #bbf4ff url("old-crumpled-paper-texture.jpg") center/cover
+          no-repeat;
+        background-image: url("cloud.jpg");
+        height: 100%;
+        position: relative;
+        color: rgb(2, 2, 31);
+        font-family: "Jost", Times, serif;
+        font-size: 25px;
+      }
+      h1 {
+        color: #ffffff;
+        text-shadow: 3px 2px 2px grey;
+      }
+      h2 {
+        color: #ffffff;
+        margin-bottom: 0.5em;
+      }
+      p {
+        line-height: 1.3;
+        margin-top: 0.5em;
+        margin-bottom: 2em;
+      }
+      .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+      }
+
+      .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+      }
+
+      .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 80%; /* Ensures text doesn't wrap weirdly */
+      }
+
+      hr {
+        margin: auto;
+        width: 30%;
+        border: 1px solid #ffffff; /* Ensures the line is visible */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgimg">
+      <div class="middle">
+        <h1>¡VOLVEMOS ENSEGUIDA!</h1>
+        <p>
+          En este momento estamos retocando nuestra web para que todo funcione a
+          la perfección.
+        </p>
+
+        <hr />
+
+        <h1>WE'LL BE RIGHT BACK!</h1>
+        <p>
+          We’re currently touching up our website to make sure everything is
+          running perfectly.
+        </p>
+      </div>
+      <div class="bottomleft">
+        <!-- <p>Volvemos en breve</p> -->
+      </div>
+    </div>
+  </body>
+</html>
