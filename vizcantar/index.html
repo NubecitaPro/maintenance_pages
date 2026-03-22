@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0; /* Removes default browser padding/margins */
+      }
+      a {
+        color: #be1a47; /* Ensures links are visible on the background */
+        text-decoration: none; /* Removes underline from links */
+      }
+
+      .bgimg {
+        /* 1. Use a relative path! */
+        /* 2. Added a fallback color */
+        background: #d9e3c7 url("old-crumpled-paper-texture.jpg") center/cover
+          no-repeat;
+        background-image: url("olives-2.png");
+        height: 100%;
+        position: relative;
+        color: rgb(17, 1, 1);
+        font-family: "Merriweather", serif;
+        font-size: 25px;
+      }
+      h1 {
+        color: #be1a47;
+      }
+      p {
+        line-height: 1.3;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+      }
+
+      .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+      }
+
+      .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%; /* Ensures text doesn't wrap weirdly */
+      }
+
+      hr {
+        margin: auto;
+        width: 40%;
+        border: 1px solid #be1a47; /* Ensures the line is visible */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bgimg">
+      <!-- <div class="topleft">
+        <img src="logo-vizcantar.png" alt="logo" />
+      </div> -->
+      <div class="middle">
+        <img src="logo-vizcantar.png" alt="olives" />
+        <h1>Volvemos en breve</h1>
+        <hr />
+
+        <p>Para hacer un pedido, por favor contacte con nosotros.</p>
+        <p>Tel. (+34) 957 540 266</p>
+        <p>
+          E-mail:
+          <a href="mailto:vizcantar@vizcantar.com">vizcantar@vizcantar.com</a>
+        </p>
+      </div>
+      <div class="bottomleft">
+        <!-- <p>Volvemos en breve</p> -->
+      </div>
+    </div>
+  </body>
+</html>
